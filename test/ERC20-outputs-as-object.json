@@ -1,0 +1,95 @@
+{
+  "type": "object",
+  "properties": {
+    "Transfer": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    },
+    "Approval": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    },
+    "totalSupply": {
+      "type": "object",
+      "required": ["uint256"],
+      "properties": {
+        "uint256": {
+          "type": "integer",
+          "description": "uint256 uint256"
+        }
+      }
+    },
+    "balanceOf": {
+      "type": "object",
+      "required": ["uint256"],
+      "properties": {
+        "uint256": {
+          "type": "integer",
+          "description": "uint256 uint256"
+        }
+      }
+    },
+    "allowance": {
+      "type": "object",
+      "required": ["uint256"],
+      "properties": {
+        "uint256": {
+          "type": "integer",
+          "description": "uint256 uint256"
+        }
+      }
+    },
+    "transfer": {
+      "type": "object",
+      "required": ["bool"],
+      "properties": {
+        "bool": {
+          "type": "boolean",
+          "description": "bool bool"
+        }
+      }
+    },
+    "approve": {
+      "type": "object",
+      "required": ["bool"],
+      "properties": {
+        "bool": {
+          "type": "boolean",
+          "description": "bool bool"
+        }
+      }
+    },
+    "transferFrom": {
+      "type": "object",
+      "required": ["bool"],
+      "properties": {
+        "bool": {
+          "type": "boolean",
+          "description": "bool bool"
+        }
+      }
+    },
+    "increaseAllowance": {
+      "type": "object",
+      "required": ["bool"],
+      "properties": {
+        "bool": {
+          "type": "boolean",
+          "description": "bool bool"
+        }
+      }
+    },
+    "decreaseAllowance": {
+      "type": "object",
+      "required": ["bool"],
+      "properties": {
+        "bool": {
+          "type": "boolean",
+          "description": "bool bool"
+        }
+      }
+    }
+  }
+}

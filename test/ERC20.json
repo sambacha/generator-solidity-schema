@@ -1,0 +1,277 @@
+{
+  "type": "object",
+  "properties": {
+    "Transfer": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "from"
+            },
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "to"
+            },
+            {
+              "type": "integer",
+              "description": "value"
+            }
+          ]
+        },
+        "outputs": {
+          "type": "array",
+          "items": []
+        }
+      }
+    },
+    "Approval": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "owner"
+            },
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "spender"
+            },
+            {
+              "type": "integer",
+              "description": "value"
+            }
+          ]
+        },
+        "outputs": {
+          "type": "array",
+          "items": []
+        }
+      }
+    },
+    "totalSupply": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "array",
+          "items": []
+        },
+        "outputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer",
+              "description": "uint256"
+            }
+          ]
+        }
+      }
+    },
+    "balanceOf": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "owner"
+            }
+          ]
+        },
+        "outputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer",
+              "description": "uint256"
+            }
+          ]
+        }
+      }
+    },
+    "allowance": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "owner"
+            },
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "spender"
+            }
+          ]
+        },
+        "outputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer",
+              "description": "uint256"
+            }
+          ]
+        }
+      }
+    },
+    "transfer": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "to"
+            },
+            {
+              "type": "integer",
+              "description": "value"
+            }
+          ]
+        },
+        "outputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "boolean",
+              "description": "bool"
+            }
+          ]
+        }
+      }
+    },
+    "approve": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "spender"
+            },
+            {
+              "type": "integer",
+              "description": "value"
+            }
+          ]
+        },
+        "outputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "boolean",
+              "description": "bool"
+            }
+          ]
+        }
+      }
+    },
+    "transferFrom": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "from"
+            },
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "to"
+            },
+            {
+              "type": "integer",
+              "description": "value"
+            }
+          ]
+        },
+        "outputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "boolean",
+              "description": "bool"
+            }
+          ]
+        }
+      }
+    },
+    "increaseAllowance": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "spender"
+            },
+            {
+              "type": "integer",
+              "description": "addedValue"
+            }
+          ]
+        },
+        "outputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "boolean",
+              "description": "bool"
+            }
+          ]
+        }
+      }
+    },
+    "decreaseAllowance": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "spender"
+            },
+            {
+              "type": "integer",
+              "description": "subtractedValue"
+            }
+          ]
+        },
+        "outputs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "boolean",
+              "description": "bool"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

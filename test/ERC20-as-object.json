@@ -1,0 +1,297 @@
+{
+  "type": "object",
+  "properties": {
+    "Transfer": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "object",
+          "required": ["from", "to", "value"],
+          "properties": {
+            "from": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address from"
+            },
+            "to": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address to"
+            },
+            "value": {
+              "type": "integer",
+              "description": "uint256 value"
+            }
+          }
+        },
+        "outputs": {
+          "type": "object",
+          "required": [],
+          "properties": {}
+        }
+      }
+    },
+    "Approval": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "object",
+          "required": ["owner", "spender", "value"],
+          "properties": {
+            "owner": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address owner"
+            },
+            "spender": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address spender"
+            },
+            "value": {
+              "type": "integer",
+              "description": "uint256 value"
+            }
+          }
+        },
+        "outputs": {
+          "type": "object",
+          "required": [],
+          "properties": {}
+        }
+      }
+    },
+    "totalSupply": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "object",
+          "required": [],
+          "properties": {}
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["uint256"],
+          "properties": {
+            "uint256": {
+              "type": "integer",
+              "description": "uint256 uint256"
+            }
+          }
+        }
+      }
+    },
+    "balanceOf": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "object",
+          "required": ["owner"],
+          "properties": {
+            "owner": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address owner"
+            }
+          }
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["uint256"],
+          "properties": {
+            "uint256": {
+              "type": "integer",
+              "description": "uint256 uint256"
+            }
+          }
+        }
+      }
+    },
+    "allowance": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "object",
+          "required": ["owner", "spender"],
+          "properties": {
+            "owner": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address owner"
+            },
+            "spender": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address spender"
+            }
+          }
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["uint256"],
+          "properties": {
+            "uint256": {
+              "type": "integer",
+              "description": "uint256 uint256"
+            }
+          }
+        }
+      }
+    },
+    "transfer": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "object",
+          "required": ["to", "value"],
+          "properties": {
+            "to": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address to"
+            },
+            "value": {
+              "type": "integer",
+              "description": "uint256 value"
+            }
+          }
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["bool"],
+          "properties": {
+            "bool": {
+              "type": "boolean",
+              "description": "bool bool"
+            }
+          }
+        }
+      }
+    },
+    "approve": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "object",
+          "required": ["spender", "value"],
+          "properties": {
+            "spender": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address spender"
+            },
+            "value": {
+              "type": "integer",
+              "description": "uint256 value"
+            }
+          }
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["bool"],
+          "properties": {
+            "bool": {
+              "type": "boolean",
+              "description": "bool bool"
+            }
+          }
+        }
+      }
+    },
+    "transferFrom": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "object",
+          "required": ["from", "to", "value"],
+          "properties": {
+            "from": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address from"
+            },
+            "to": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address to"
+            },
+            "value": {
+              "type": "integer",
+              "description": "uint256 value"
+            }
+          }
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["bool"],
+          "properties": {
+            "bool": {
+              "type": "boolean",
+              "description": "bool bool"
+            }
+          }
+        }
+      }
+    },
+    "increaseAllowance": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "object",
+          "required": ["spender", "addedValue"],
+          "properties": {
+            "spender": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address spender"
+            },
+            "addedValue": {
+              "type": "integer",
+              "description": "uint256 addedValue"
+            }
+          }
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["bool"],
+          "properties": {
+            "bool": {
+              "type": "boolean",
+              "description": "bool bool"
+            }
+          }
+        }
+      }
+    },
+    "decreaseAllowance": {
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "type": "object",
+          "required": ["spender", "subtractedValue"],
+          "properties": {
+            "spender": {
+              "type": "string",
+              "pattern": "0x[a-fA-F0-9]{40}",
+              "description": "address spender"
+            },
+            "subtractedValue": {
+              "type": "integer",
+              "description": "uint256 subtractedValue"
+            }
+          }
+        },
+        "outputs": {
+          "type": "object",
+          "required": ["bool"],
+          "properties": {
+            "bool": {
+              "type": "boolean",
+              "description": "bool bool"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "type": "object",
+  "properties": {
+    "Transfer": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "from"
+        },
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "to"
+        },
+        {
+          "type": "integer",
+          "description": "value"
+        }
+      ]
+    },
+    "Approval": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "owner"
+        },
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "spender"
+        },
+        {
+          "type": "integer",
+          "description": "value"
+        }
+      ]
+    },
+    "totalSupply": {
+      "type": "array",
+      "items": []
+    },
+    "balanceOf": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "owner"
+        }
+      ]
+    },
+    "allowance": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "owner"
+        },
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "spender"
+        }
+      ]
+    },
+    "transfer": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "to"
+        },
+        {
+          "type": "integer",
+          "description": "value"
+        }
+      ]
+    },
+    "approve": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "spender"
+        },
+        {
+          "type": "integer",
+          "description": "value"
+        }
+      ]
+    },
+    "transferFrom": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "from"
+        },
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "to"
+        },
+        {
+          "type": "integer",
+          "description": "value"
+        }
+      ]
+    },
+    "increaseAllowance": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "spender"
+        },
+        {
+          "type": "integer",
+          "description": "addedValue"
+        }
+      ]
+    },
+    "decreaseAllowance": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "0x[a-fA-F0-9]{40}",
+          "description": "spender"
+        },
+        {
+          "type": "integer",
+          "description": "subtractedValue"
+        }
+      ]
+    }
+  }
+}

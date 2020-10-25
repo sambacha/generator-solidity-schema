@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "required": ["tokenWallet"],
+  "properties": {
+    "tokenWallet": {
+      "type": "string",
+      "pattern": "0x[a-fA-F0-9]{40}",
+      "description": "address tokenWallet"
+    }
+  }
+}
