@@ -10,9 +10,9 @@
     "merge": "^1.2.1"
   },
   "devDependencies": {
-    "eslint": "^7.12.0",
-    "openzeppelin-solidity": "^2.5.1",
-    "tape": "^5.0.1"
+    "eslint": "7.12.0",
+    "openzeppelin-solidity": "2.5.1",
+    "tape": "5.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
