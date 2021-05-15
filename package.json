@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "eslint": "^7.12.0",
-    "openzeppelin-solidity": "^2.5.1",
+    "openzeppelin-solidity": "4.1.0",
     "tape": "^5.0.1"
   },
   "scripts": {
